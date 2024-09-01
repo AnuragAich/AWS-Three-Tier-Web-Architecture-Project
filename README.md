@@ -9,7 +9,7 @@ In this hands-on workshop, you'll directly build a robust three-tier web archite
 In this architecture, client traffic is first routed through a public-facing Application Load Balancer, which directs it to EC2 instances running the web tier. These EC2 instances host Nginx web servers that serve a React.js website and forward API requests to an internal Application Load Balancer. The internal load balancer then directs traffic to the application tier, built with Node.js, which interacts with an Aurora MySQL database configured for high availability with multi-AZ deployments. Each tier—web, application, and database—features load balancing, health checks, and autoscaling to ensure continuous availability and performance.
 
 ## Services Used
-(https://github.com/AnuragAich/AWS-Three-Tier-Web-Architecture-Project/blob/main/Services%20Used.png)
+![AWS Architecture - DrawIO](https://github.com/AnuragAich/AWS-Three-Tier-Web-Architecture-Project/blob/main/Services%20Used.png)
 
 ### AWS PROJECT
 ---
